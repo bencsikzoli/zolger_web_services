@@ -1,0 +1,498 @@
+:root {
+    --bg-color: #53536d;
+}
+
+.box1 {
+    background-color: rgb(133, 209, 247);
+}
+
+.box2 {
+    background-color: rgb(133, 247, 209);
+}
+
+.box3 {
+    background-color: rgb(247, 133, 238);
+}
+
+.box4 {
+    background-color: rgb(247, 245, 133);
+}
+
+body {
+    background: var(--bg-color);
+    width: 100%;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+#top,
+#services {
+    position: relative;
+    min-height: 85vh;
+}
+
+.front-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow-y: visible;
+}
+
+.front-bg img {
+    max-width: 620px;
+    height: auto;
+}
+
+.front-logo-bg {
+    position: absolute;
+    top: 50%;
+    overflow-x: visible;
+    right: 0;
+    overflow-y: hidden;
+}
+
+.front-logo-bg img {
+    width: 620px;
+}
+
+/* HERO */
+header {
+    width: 100%;
+    height: 100%;
+    min-height: 85vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+    margin: 17px auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.hero-text {
+    justify-content: flex-end;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero-text p {
+    text-align: right;
+    font-size: 2rem;
+}
+
+.intro-text {
+    width: 428px;
+    text-align: center;
+}
+
+.more {
+    color: #e9e9e9;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.more p {
+    padding-bottom: 10px;
+}
+
+/* Rólunk  */
+
+#about {
+    margin: 0;
+    width: 100%;
+    background: url("../img/Depositphotos_10128910_XL.jpg") top center no-repeat fixed;
+    background-size: cover;
+    height: 90vh;
+}
+
+.about {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.about-text {
+    padding-bottom: 40px;
+    line-height: 1.5em;
+    border-bottom: solid 2px #fff;
+}
+
+.projects {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.box-790 {
+    max-width: 790px;
+}
+
+.box-470 {
+    max-width: 470px;
+}
+
+.developers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.developer {
+    padding: 10px 40px;
+}
+
+.developer>.position {
+    margin-top: 15px;
+}
+
+/* SERVICES */
+
+#services {
+    background-color: #7F7F93;
+    text-align: center;
+}
+
+#services h2 {
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.row-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 33.333%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.round {
+    background-color: #53536d;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.service-img {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.service-title {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.service-text {
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 250px;
+}
+
+.details {
+    width: 33.333%;
+    min-height: 60vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details h3 {
+    display: block;
+    min-height: 200px;
+    padding: 60px 15px 0 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.details p {
+    padding: 0 60px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.details span {
+    display: block;
+    padding-bottom: 40px;
+    text-decoration: underline;
+}
+
+.details.det1 {
+    background-color: #6F6F86;
+}
+
+.details.det2 {
+    background-color: #60607B;
+}
+
+.details.det3 {
+    background-color: #53536D;
+}
+
+footer {
+    width: 100%;
+    background-color: #fff;
+    color: #53536d;
+    justify-content: center;
+    align-content: center;
+    padding: 15px 0;
+}
+
+footer h3,
+footer p {
+    text-align: center;
+}
+
+/* flip card CSS rules */
+
+/* .card {
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+}
+
+.card__inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card__inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__face--front h2 {
+    color: #FFF;
+    font-size: 32px;
+}
+
+.card__face--back {
+    transform: rotateY(180deg);
+}
+
+.card__content {
+    width: 100%;
+    height: 100%;
+}
+
+.card__header {
+    position: relative;
+    padding: 30px 30px 40px;
+}
+
+.card__header:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+    z-index: -1;
+    border-radius: 0px 0px 50% 0px;
+}
+
+.pp {
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    background-color: #FFF;
+    border: 5px solid #FFF;
+    object-fit: cover;
+}
+
+.card__header h2 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card__body {
+    padding: 30px;
+}
+
+.card__body h3 {
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card__body p {
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.4;
+} */
+
+/* flip card advanced */
+
+.container,
+.flip-box,
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+}
+
+.container,
+.flip_box {
+    position: relative;
+}
+
+.front,
+.back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.container {
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+}
+
+.flip_box {
+    transition: all 0.5s ease-out;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.front {
+    color: #fff;
+}
+
+.back {
+    color: red;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flipped {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+/* More arrow CSS */
+.r_wrap {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+
+.b_round,
+.s_round {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #18181f;
+    transition: all 0.2s linear;
+}
+
+.b_round {
+    opacity: 0;
+    background-color: #18181f;
+}
+
+.b_round_hover {
+    transform: scale(1.37);
+    opacity: 0.4;
+}
+
+.b_round_back_hover {
+    background-color: #18181f;
+}
+
+.s_round_click {
+    transform: scale(1.7);
+}
+
+.s_round_back {
+    background-color: #252525;
+}
+
+.s_arrow {
+    width: 52px;
+    height: 52px;
+    background-image: url('https://img-fotki.yandex.ru/get/194549/29644339.5/0_d6c60_1d7815f0_orig');
+    background-color: transparent;
+    transition: all 0.35s linear;
+}
+
+.s_arrow_rotate {
+    transform: rotate(-180deg);
+}
